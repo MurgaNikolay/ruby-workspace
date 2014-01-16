@@ -1,0 +1,13 @@
+{
+    "id": "torquebox",
+    //"action": "remove",
+    //"password": "$1$7shqwUV2$zjQ0OZtuzAYHFfddv7vjf1",
+    "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHWkpm9igQJ2q/P9NZpNryDK0ziDTWL/LjJgywWDuP1J2F0E+qFyF/SL2CmXCPfg36kQ3gGuFPCWUHnMr4qpVaM7vY0LrpmqONYcOi2F7/IOpyu8EXbnj1iEUyZlg5jWifKkcqVGT9YQykuJKEAyTD6S/VAS3+aUPG02vgUisf0o8PryHZg4J1t5MuByh1WHbPlv0FpJkTYyKYmNc4r3XGA+9kdek3aJWV1djr0SMPyFSZotxB0tddkwMbZeE+FdlYZMeSaXQHWHM0BcLL91i8kdDXFH370xGB186ITj1V3aAWGndzv2e+yv0//WMBmdxDsz10fWLvq3d55XkdJyzf root@app1"
+    ],
+    "groups": ["torquebox"],
+    "uid": 2002,
+    "gid": 2002,
+    "shell": "\/bin\/bash",
+    "comment": "Main torquebox user"
+}

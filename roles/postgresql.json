@@ -1,0 +1,24 @@
+{
+    "name": "postgresql",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "postgresql": {
+            "password": {
+                "postgres": "postgres"
+            }
+        },
+        "application": {
+            "phppgadmin": {
+                "fqdn": "pga.vagrant"
+            }
+        }
+    },
+    "description": "The base role for systems that have chef client",
+    "run_list": [
+        "recipe[postgresql::server]",
+        "recipe[postgresql::client]" ,
+        "recipe[database::postgresql]",
+        "recipe[th-applications::phppgadmin]"
+    ]
+}

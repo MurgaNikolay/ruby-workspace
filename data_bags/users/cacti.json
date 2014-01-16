@@ -1,0 +1,5 @@
+{
+    "id": "cacti",
+    "shell": "\/bin\/bash",
+    "manage_home": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ubuntu",
+  "password": "$1$7shqwUV2$zjQ0OZtuzAYHFfddv7vjf1",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaUotrSS3WgXqGWNdkFESv7kUe//H1fJGGFOoyeOXcu4rhqHR3YC0YkOpTfbnfKqALpMWO0DkSC/EM23Zzp8Ly6f9akCFmWe1Nnhd+UPNZq2sEJnQoLx8sc0GpzyNFtl8FSUJMEXmkJAU59W1/dJTWvW0cu8n0O6cPESj3r0aY58fsYOytmbVqrZ4X7mPFCT0T75bdxqu3yJ74ytIzRuksZFFlB5PEP98T+0SHfMPZ9sAbIE0FOH4ebC1Jbxs0KzvU/rgqFS3t/+r0BcYfYqVpOsg3nW6lFHffTh11Yknxw6lTot6ENugrKexqenmMuemyzqaJ9GP7tBISbCw/COXF ubuntu@st1",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClw9TXXlU2HLN+TnKVXAE5Tk44EdPANLH1UtqyfYhEpE8hxDTX3rJx5bJteZtltOJwGh8baDqt+dJqGlsXKx+JmAk2g9fFMoGh3OjRn2cuUMCC0+yZUPmAuY5zFiNkfUe03LKGUQddNZxyUSEtzHrVC6eUdpOcinPfBH4+YoGmOjU2SvBE15AibQH95NeKJfMtolN9G25HFDDu20aZj8GuId9cMkE8U3LZMgiV+feJZbHo6cHDRoyJuGo9nwuP/PRmW1uNZ9GszWh2XVcMcfHhH/WaaOT0G+8Us/nqdlZodWrrb0hkAoqK2NuzA8HOVlw3wv+5zPLX3SiiW9MNL2UH monitoring"
+  ],
+  "groups": [
+    "admin",
+    "ubuntu"
+  ],
+  "uid": 2000,
+  "gid": 2000,
+  "shell": "/bin/bash",
+  "comment": "Main DevOps user"
+}

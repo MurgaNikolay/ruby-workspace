@@ -1,0 +1,13 @@
+{
+    "id": "harry",
+    //"action": "remove",
+    //"password": "$1$7shqwUV2$zjQ0OZtuzAYHFfddv7vjf1",
+    "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiyCVr+HHeRMbr3WnYhNF5SFtlMA71LM1o6iF7NcRQjeAHeeydXZh+goWxG+TWn6XTywFgvwVColXzTG3nrx1L7n77A2sW6TqKtXy1K9M72xK69LvB7Q30CFECqMa92vLUn1Cn2bZQ9uvDiqgfKJrelHsZjPiJn5oaPXIIwmHjLLvIeSI5vjp1Y8F14FhhFM70OaxdgsrhVqDOEiqXqjYkv3/6eI5qvTQ1ajygC1SWkU+X9PDHHoW7nbljPwEy2a4DaAVC/Bxt6bFjXFGrm6TIud57cXUYTWcOQk6xTY1mzh5E01u2VTuYQ1X4rmxM9lPIMCDfK89NF+nsVKBDrpHV mis@mis1"
+    ],
+    "groups": [ "harry" ],
+    "uid": 2004,
+    "gid": 2004,
+    "shell": "\/bin\/bash",
+    "comment": "User for MIS user"
+}

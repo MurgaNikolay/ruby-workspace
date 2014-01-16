@@ -1,0 +1,25 @@
+{
+    "name": "mysql",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "mysql": {
+            "server_root_password": "root",
+            "server_debian_password": "root",
+            "server_repl_password": "root"
+        },
+
+        "application": {
+            "phpmyadmin": {
+                "fqdn": "pma.vagrant"
+            }
+        }
+    },
+    "description": "The base role for systems that have chef client",
+    "run_list": [
+        "recipe[mysql::server]",
+        "recipe[mysql::client]" ,
+        "recipe[database::mysql]",
+        "recipe[th-applications::phpmyadmin]"
+    ]
+}

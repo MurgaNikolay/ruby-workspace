@@ -1,0 +1,35 @@
+{
+    "name": "general",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "localegen": {
+            "lang": [
+                "ru_RU.UTF-8 UTF-8",
+                "en_US.UTF-8 UTF-8",
+                "en_GB.UTF-8 UTF-8"
+            ]
+        },
+        "rvm": {
+            "user_installs": [
+                {
+                    "user": "vagrant",
+                    "default_ruby": "2.0",
+                    "install_rubies": true,
+                    "rubies": ["1.9", "2.0"]
+                }
+            ],
+            "vagrant": {
+                "system_chef_client": "/opt/chef/bin/chef-client",
+                "system_chef_solo": "/opt/chef/bin/chef-solo"
+            }
+        }
+    },
+    "description": "The base role for servers",
+    "run_list": [
+        "recipe[locale-gen]",
+        "recipe[rvm::vagrant]",
+        "recipe[rvm::user]"
+
+    ]
+}
