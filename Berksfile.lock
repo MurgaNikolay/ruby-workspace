@@ -1,0 +1,144 @@
+{
+  "sources": {
+    "rvm": {
+      "path": "./cookbooks/rvm"
+    },
+    "th-accounts": {
+      "path": "./cookbooks/th-accounts"
+    },
+    "th-applications": {
+      "path": "./cookbooks/th-applications"
+    },
+    "th-cacti": {
+      "path": "./cookbooks/th-cacti"
+    },
+    "th-nginx": {
+      "path": "./cookbooks/th-nginx"
+    },
+    "zabbix": {
+      "locked_version": "0.0.42",
+      "git": "git@github.com:MurgaNikolay/zabbix.git",
+      "ref": "e81a73fdec0aae5a62214fa1ae279c4075c4a08e"
+    },
+    "locale-gen": {
+      "locked_version": "0.0.3",
+      "git": "git@github.com:danhart/locale-gen.git",
+      "ref": "1eb11640f9733f39c7cf1ec86b778eb1f8748463"
+    },
+    "oh_my_zsh": {
+      "locked_version": "0.0.1",
+      "git": "git@github.com:shingara/oh-my-zsh-chef.git",
+      "ref": "46f89c50ce85a098a04b20e7f672be2700083ee9"
+    },
+    "user": {
+      "locked_version": "0.3.1",
+      "git": "git@github.com:MurgaNikolay/chef-user.git",
+      "ref": "37b4da99708500a5f8b034adf423ec6eb7e74275"
+    },
+    "users": {
+      "locked_version": "1.6.0"
+    },
+    "chef-solo-search": {
+      "locked_version": "0.5.1"
+    },
+    "cacti": {
+      "locked_version": "0.3.0"
+    },
+    "ssl": {
+      "locked_version": "1.1.0"
+    },
+    "java": {
+      "locked_version": "1.17.4"
+    },
+    "windows": {
+      "locked_version": "1.12.6"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "aws": {
+      "locked_version": "1.0.0"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    },
+    "php-fpm": {
+      "locked_version": "0.6.3"
+    },
+    "apt": {
+      "locked_version": "2.3.4"
+    },
+    "yum": {
+      "locked_version": "3.0.4"
+    },
+    "git": {
+      "locked_version": "2.9.0"
+    },
+    "dmg": {
+      "locked_version": "2.1.2"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "runit": {
+      "locked_version": "1.5.8"
+    },
+    "yum-epel": {
+      "locked_version": "0.2.0"
+    },
+    "application_nginx": {
+      "locked_version": "2.0.2"
+    },
+    "application": {
+      "locked_version": "3.0.0"
+    },
+    "nginx": {
+      "locked_version": "2.2.0"
+    },
+    "bluepill": {
+      "locked_version": "2.3.1"
+    },
+    "rsyslog": {
+      "locked_version": "1.10.2"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "apache2": {
+      "locked_version": "1.8.14"
+    },
+    "database": {
+      "locked_version": "1.6.0"
+    },
+    "mysql": {
+      "locked_version": "4.0.14"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "postgresql": {
+      "locked_version": "3.3.4"
+    },
+    "xfs": {
+      "locked_version": "1.1.0"
+    },
+    "ufw": {
+      "locked_version": "0.7.4"
+    },
+    "firewall": {
+      "locked_version": "0.11.2"
+    },
+    "ark": {
+      "locked_version": "0.4.2"
+    },
+    "chocolatey": {
+      "locked_version": "0.0.5"
+    },
+    "powershell": {
+      "locked_version": "2.0.0"
+    },
+    "cron": {
+      "locked_version": "1.2.8"
+    }
+  }
+}

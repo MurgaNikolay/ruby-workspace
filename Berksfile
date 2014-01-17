@@ -15,5 +15,5 @@ cookbook "users"
 cookbook "chef-solo-search"
 cookbook "cacti"
 cookbook "ssl"
-#cookbook "rvm", git: 'git@github.com:fnichol/chef-rvm.git'
+cookbook "rvm", git: 'git@github.com:fnichol/chef-rvm.git'
 
