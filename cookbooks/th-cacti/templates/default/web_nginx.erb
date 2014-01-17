@@ -1,0 +1,30 @@
+server {
+  listen <%= @listen || 80 %>;
+  <% if @listen_ssl%>
+  listen <%=@listen_ssl%> ssl;
+  ssl_certificate     <%= (:ssl_certificate || "/etc/ssl/certs/#{@fqdn}.combined.crt") %>;
+  ssl_certificate_key <%= (:ssl_certificate_key || "/etc/ssl/private/#{@fqdn}.key") %>;
+  <% end %>
+
+  index       index.php;
+  root        <%= @doc_root %>;
+  server_name <%= "#{@fqdn} #{@aliases.join(' ')}"%>;
+
+  access_log <%= @access_log || "/var/log/nginx/#{@appliction_name}.log"%>;
+  error_log <%= @error_log || "/var/log/nginx/#{@appliction_name}.log"%>;
+
+  location / {
+    try_files $uri /index.php?$query_string;
+  }
+
+  location ~ .*\.php$ {
+    include /etc/nginx/fastcgi_params;
+    fastcgi_read_timeout 60000;
+    fastcgi_buffers 512 16k;
+    fastcgi_pass   <%= @fastcgi_listen %>;
+    fastcgi_index   index.php;
+    <% php_values = @php_settings.map { |name, value| "#{name}=#{value}"}.join("\n") %>
+    fastcgi_param PHP_VALUE "<%=php_values%>";
+    fastcgi_param SCRIPT_FILENAME <%=@doc_root%>/$fastcgi_script_name;
+  }
+}
