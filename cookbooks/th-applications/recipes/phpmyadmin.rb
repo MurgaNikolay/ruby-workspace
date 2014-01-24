@@ -9,7 +9,7 @@ application application['application_name'] do
   path application['path']
   repository application['repository']
   revision application['revision']
-  before_deploy do
+  before_restart do
     FileUtils.mkdir_p "#{application['path']}/current/conf/config.inc.php-dist" "#{application['path']}/current/conf/config.inc.php"
   end
 end

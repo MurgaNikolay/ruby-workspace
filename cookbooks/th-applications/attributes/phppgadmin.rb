@@ -6,13 +6,12 @@ default['application']['phppgadmin']['socket'] = "#{default['application']['phpp
 default['application']['phppgadmin']['user'] = 'deploy'
 default['application']['phppgadmin']['group'] = 'deploy'
 
-default['application']['phppgadmin']['fastcgi_params']['PHP_VALUE'] =  "\"memory_limit=256M\npost_max_size=32M\nupload_max_filesize=16M\nmax_execution_time=600\nmax_input_time=600\ndate.timezone='UTC'\""
+default['application']['phppgadmin']['fastcgi_params']['PHP_VALUE'] = "\"memory_limit=256M\npost_max_size=32M\nupload_max_filesize=16M\nmax_execution_time=600\nmax_input_time=600\ndate.timezone='UTC'\""
 default['application']['phppgadmin']['repository'] = 'https://github.com/phppgadmin/phppgadmin.git'
 default['application']['phppgadmin']['revision'] = 'REL_5-1-0'
 
 
+if node['platform_family'] == 'ubuntu'
+  default['postgresql']['client']['packages'] = ["postgresql-client-#{node['postgresql']['version']}", "libpq-dev", "libpq5"]
+end
 
-
-default['application']['phppgadmin']['packages'] = [
-
-]

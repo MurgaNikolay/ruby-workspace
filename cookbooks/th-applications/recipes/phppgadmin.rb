@@ -8,9 +8,9 @@ application application['application_name'] do
   path application['path']
   repository application['repository']
   revision application['revision']
-  before_deploy do
-    FileUtils.mkdir_p File.dirname(application['socket'])
-  end
+  #before_deploy do
+  #  FileUtils.mkdir_p File.dirname(application['socket'])
+  #end
   before_restart do
     FileUtils.cp "#{application['path']}/current/conf/config.inc.php-dist", "#{application['path']}/current/conf/config.inc.php"
   end

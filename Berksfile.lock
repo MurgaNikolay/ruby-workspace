@@ -1,10 +1,16 @@
 {
   "sources": {
+    "postgresql": {
+      "path": "./cookbooks/postgresql"
+    },
     "th-accounts": {
       "path": "./cookbooks/th-accounts"
     },
     "th-applications": {
       "path": "./cookbooks/th-applications"
+    },
+    "th-base": {
+      "path": "./cookbooks/th-base"
     },
     "th-cacti": {
       "path": "./cookbooks/th-cacti"
@@ -49,11 +55,17 @@
       "git": "git@github.com:fnichol/chef-rvm.git",
       "ref": "26ad5c043c70ea98855a049fbbacb7ffc5ad73e3"
     },
-    "php-fpm": {
-      "locked_version": "0.6.3"
-    },
     "apt": {
       "locked_version": "2.3.4"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "php-fpm": {
+      "locked_version": "0.6.3"
     },
     "yum": {
       "locked_version": "3.0.4"
@@ -63,9 +75,6 @@
     },
     "dmg": {
       "locked_version": "2.1.2"
-    },
-    "build-essential": {
-      "locked_version": "1.4.2"
     },
     "windows": {
       "locked_version": "1.12.6"
@@ -105,12 +114,6 @@
     },
     "mysql": {
       "locked_version": "4.0.14"
-    },
-    "openssl": {
-      "locked_version": "1.1.0"
-    },
-    "postgresql": {
-      "locked_version": "3.3.4"
     },
     "aws": {
       "locked_version": "1.0.0"
