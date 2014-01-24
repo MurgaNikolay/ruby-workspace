@@ -14,7 +14,13 @@ application application['application_name'] do
   	end
   end
   before_restart do
-    FileUtils.cp "#{application['path']}/current/conf/config.inc.php-dist", "#{application['path']}/current/conf/config.inc.php"
+    template "#{application['path']}/current/conf/config.inc.php" do
+      source   'phppgadmin.config.php.erb'
+      owner    application['user']
+      group    application['group']
+      mode     '0644'
+    end
+    #FileUtils.cp "#{application['path']}/current/conf/config.inc.php-dist", "#{application['path']}/current/conf/config.inc.php"
   end
   action :force_deploy
 end
