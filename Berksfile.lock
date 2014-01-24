@@ -1,8 +1,5 @@
 {
   "sources": {
-    "rvm": {
-      "path": "./cookbooks/rvm"
-    },
     "th-accounts": {
       "path": "./cookbooks/th-accounts"
     },
@@ -47,20 +44,10 @@
     "ssl": {
       "locked_version": "1.1.0"
     },
-    "java": {
-      "locked_version": "1.17.4"
-    },
-    "windows": {
-      "locked_version": "1.12.6"
-    },
-    "chef_handler": {
-      "locked_version": "1.1.4"
-    },
-    "aws": {
-      "locked_version": "1.0.0"
-    },
-    "chef_gem": {
-      "locked_version": "0.1.0"
+    "rvm": {
+      "locked_version": "0.9.1",
+      "git": "git@github.com:fnichol/chef-rvm.git",
+      "ref": "26ad5c043c70ea98855a049fbbacb7ffc5ad73e3"
     },
     "php-fpm": {
       "locked_version": "0.6.3"
@@ -79,6 +66,12 @@
     },
     "build-essential": {
       "locked_version": "1.4.2"
+    },
+    "windows": {
+      "locked_version": "1.12.6"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
     },
     "runit": {
       "locked_version": "1.5.8"
@@ -119,6 +112,9 @@
     "postgresql": {
       "locked_version": "3.3.4"
     },
+    "aws": {
+      "locked_version": "1.0.0"
+    },
     "xfs": {
       "locked_version": "1.1.0"
     },
@@ -139,6 +135,12 @@
     },
     "cron": {
       "locked_version": "1.2.8"
+    },
+    "java": {
+      "locked_version": "1.17.4"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
     }
   }
 }

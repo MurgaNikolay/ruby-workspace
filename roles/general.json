@@ -27,6 +27,7 @@
     },
     "description": "The base role for servers",
     "run_list": [
+        "recipe[apt]",
         "recipe[locale-gen]",
         "recipe[rvm::vagrant]",
         "recipe[rvm::user]"
