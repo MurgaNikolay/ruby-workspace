@@ -11,6 +11,8 @@ default['application']['phppgadmin']['repository'] = 'https://github.com/phppgad
 default['application']['phppgadmin']['revision'] = 'REL_5-1-0'
 
 
+default['application']['phppgadmin']['shared_folders'] = ['sockets']
+
 if node['platform_family'] == 'ubuntu'
   default['postgresql']['client']['packages'] = ["postgresql-client-#{node['postgresql']['version']}", "libpq-dev", "libpq5"]
 end

@@ -8,3 +8,4 @@ default['application']['phpmyadmin']['group'] = 'deploy'
 default['application']['phpmyadmin']['path'] = '/var/www/phpmyadmin'
 default['application']['phpmyadmin']['repository'] = 'https://github.com/phpmyadmin/phpmyadmin.git'
 default['application']['phpmyadmin']['revision'] = 'RELEASE_4_1_4'
+default['application']['phpmyadmin']['shared_folders'] = ['sockets']
