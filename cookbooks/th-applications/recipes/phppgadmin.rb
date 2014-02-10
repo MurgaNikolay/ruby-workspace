@@ -8,6 +8,7 @@ application application['application_name'] do
   path application['path']
   repository application['repository']
   revision application['revision']
+  shallow_clone false
   before_deploy do
     application['shared_folders'].each do |folder|
       FileUtils.mkdir_p "#{application['path']}/shared/#{folder}"

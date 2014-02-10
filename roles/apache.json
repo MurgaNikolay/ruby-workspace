@@ -1,0 +1,13 @@
+{
+    "name": "apache",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "apache":{
+            "listen_addresses":[ "127.0.0.1" ],
+            "listen_ports":[ 8081 ]
+        }
+    },
+    "description": "The base role for systems that have chef client",
+    "run_list": [ ]
+}

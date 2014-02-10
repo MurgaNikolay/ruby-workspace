@@ -1,0 +1,9 @@
+{
+    "name":"localhost",
+    "run_list": [
+        "role[apache]",
+        "role[general]",
+        "role[mysql]",
+        "role[postgresql]"
+    ]
+}
