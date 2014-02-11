@@ -3,6 +3,7 @@
     "chef_type": "role",
     "json_class": "Chef::Role",
     "default_attributes": {
+        "users": [ 'deploy' ],
         "localegen": {
             "lang": [
                 "ru_RU.UTF-8 UTF-8",
@@ -29,8 +30,7 @@
     "run_list": [
         "recipe[apt]",
         "recipe[locale-gen]",
-        "recipe[rvm::vagrant]",
-        "recipe[rvm::user]"
-
+        "recipe[rvm::user]",
+        "recipe[th-accounts]"
     ]
 }
