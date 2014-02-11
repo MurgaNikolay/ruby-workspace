@@ -4,7 +4,7 @@ require 'json'
 # Load constants from rake config file.
 require File.join(File.dirname(__FILE__), 'config', 'rake')
 
-take :default do
+task :default do
 
 end
 
