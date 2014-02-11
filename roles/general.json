@@ -15,13 +15,13 @@
         "rvm": {
             "user_installs": [
                 {
-                    "user": "vagrant",
+                    "user": "dis",
                     "default_ruby": "2.0",
                     "install_rubies": true,
                     "rubies": ["1.9", "2.0"]
                 }
             ],
-            "vagrant": {
+            "dis": {
                 "system_chef_client": "/opt/chef/bin/chef-client",
                 "system_chef_solo": "/opt/chef/bin/chef-solo"
             }
