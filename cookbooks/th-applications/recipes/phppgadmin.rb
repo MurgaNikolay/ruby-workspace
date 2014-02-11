@@ -16,7 +16,7 @@ application application['application_name'] do
   end
   before_restart do
     template "#{application['path']}/current/conf/config.inc.php" do
-      cookbook 'th-application'
+      cookbook 'th-applications'
       source   'phppgadmin.config.php.erb'
       owner    application['user']
       group    application['group']
