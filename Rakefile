@@ -10,5 +10,5 @@ end
 
 task :solo, :node do |_, args|
   system 'berks --path vendor'
-  system "sudo chef-solo -c .chef/solo.rb -j #{args[:node]}"
+  system "sudo chef-solo -c .chef/solo.rb -j nodes/#{args[:node]}.json"
 end
