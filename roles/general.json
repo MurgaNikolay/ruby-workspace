@@ -3,7 +3,7 @@
     "chef_type": "role",
     "json_class": "Chef::Role",
     "default_attributes": {
-        "users": [ 'deploy' ],
+        "users": [ "deploy" ],
         "localegen": {
             "lang": [
                 "ru_RU.UTF-8 UTF-8",
